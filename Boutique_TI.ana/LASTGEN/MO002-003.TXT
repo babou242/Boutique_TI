@@ -1,0 +1,9 @@
+//MO002-003.TXT ANA00002 TO ANA00003
+Product		NNF*	Produit	nouveau nom Product
+Pricing		NFI		nouveau fichier de données
+PriceBreak		NFI		nouveau fichier de données
+FutureInventory		NFI		nouveau fichier de données
+Contrainte_Produit_Pricing		NWL	Product (idProduct) et Pricing (idProduct)	Nouvelle liaison entre les fichiers de données Product (idProduct) et Pricing (idProduct)
+Contrainte_Pricing_PriceBreak		NWL	Pricing (idPricing) et PriceBreak (idPricing)	Nouvelle liaison entre les fichiers de données Pricing (idPricing) et PriceBreak (idPricing)
+Contrainte_Produit_FutureInventory		NWL	Product (idProduct) et FutureInventory (idProduct)	Nouvelle liaison entre les fichiers de données Product (idProduct) et FutureInventory (idProduct)
+MaConnexion1		CNX		

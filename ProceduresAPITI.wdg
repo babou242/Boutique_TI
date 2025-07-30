@@ -1,0 +1,350 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : ProceduresAPITI
+ major_version : 30
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+ options : 256
+procedure_set :
+ identifier : 0x17e570d900207867
+ internal_properties : HwAAAB4AAADjksEavC8JwuEiHc63C+ul0ggS/BOiC8PJfOp/6aEkSKX4qEWcBw==
+ code_elements :
+  type_code : 31
+  p_codes : []
+  procedures :
+   -
+     name : ImporterProduitTI
+     internal_properties : HwAAAB4AAABoOApEUruVtV/EH2uuVsSSS//T+9BArbQEG2NUO/BgK3B4gN5EOSUbmJPUqcIaVo5lFsEXQiiUaH0vMS4TjMVnbLlkU0Y1WWDJzjzl/Ln8Wx7teQKy8RRubic6sMhd3YNWBRymzox/RsIUnr9MJBvyBPV1/KymFbq7EaMh9v43Y3/md1Ke1FM=
+     procedure_id : 1721906509851490407
+     type_code : 15
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] ImporterProduitTI (<sPartNumber> est chaîne)
+      //
+      // Paramètres :
+      //	sPartNumber (chaîne ANSI) : <indiquez ici le rôle de sPartNumber>
+      // Valeur de retour :
+      // 	booléen : <indiquez ici le rôle de la valeur de retour>
+      //
+      // Exemple :
+      // <Indiquez ici un exemple d'utilisation>
+      //
+      procédure ImporterProduitTI(sPartNumber est une chaîne) : booléen
+      SI PAS TokenEstValide() alors
+      	SI PAS AutentificationAPITI() alors
+      		Erreur("Impossible de renouveler le token API.")
+      		RENVOYER Faux
+      	FIN
+      FIN
+      
+      reqProduit est une httpRequête
+      reqProduit.url = "https://transact.ti.com/v2/store/products/" + sPartNumber +"?currency=EUR"<§aad:0§>
+      reqProduit.Méthode = httpGet
+      reqProduit.Entête["Authorization"] = "Bearer " +gAccessToken
+      
+      repProduit est une httpRéponse = HTTPEnvoie(reqProduit)
+      
+      SI repProduit.CodeEtat <> 200 alors
+      	Erreur("Erreur API TI (" + repProduit.CodeÉtat + ") : " + repProduit.Contenu)
+      	RENVOYER Faux
+      FIN
+      
+      cJSONProduit est un Variant = JSONVersVariant(repProduit.Contenu)
+      
+      RENVOYER TraiterProduit(cJSONProduit)
+     type : 458752
+   -
+     name : TokenEstValide
+     procedure_id : 1721906509851555943
+     type_code : 15
+     code : |1+
+      // Résumé : Renvoie VRAI si le token est valide, FAUX si expiré
+      // Syntaxe :
+      //[ <Résultat> = ] TokenEstValide ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	booléen : <indiquez ici le rôle de la valeur de retour>
+      //
+      // Exemple :
+      // <Indiquez ici un exemple d'utilisation>
+      //
+      procédure TokenEstValide() : booléen
+      RENVOYER DateHeureSys() < gHeureExpirationToken
+      
+     type : 458752
+   -
+     name : AutentificationAPITI
+     procedure_id : 1721906509851621479
+     type_code : 15
+     code : |1+
+      // Résumé : Permet de se connecter à l'API de TI et de récupérer le Token de connexion
+      // Syntaxe :
+      //[ <Résultat> = ] AutentificationAPITI ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	booléen : Vrai si la connexion a réussi, Faux sinon.
+      //
+      // Exemple :
+      // <Indiquez ici un exemple d'utilisation>
+      //
+      procédure AutentificationAPITI() : booléen
+      sRequeteAuthentification est une httpRequête
+      
+      sRequeteAuthentification.URL					= "https://transact.ti.com/v1/oauth/accesstoken"
+      sRequeteAuthentification.Entête["Content-Type"]	= "application/x-www-form-urlencoded"
+      sRequeteAuthentification.Contenu				= ChaîneConstruit("grant_type=client_credentials&client_id=%1&client_secret=%2", gCleAPI, gClientSecret)
+      
+      sReponseAuthentification est une httpRéponse = HTTPEnvoie(sRequeteAuthentification)
+      
+      SI sReponseAuthentification.CodeEtat = 200 alors
+      	cJSON est un variant = JSONVersVariant(sReponseAuthentification.Contenu)
+      
+      	gAccessToken = cJSON.access_token
+      
+      	gHeureExpirationToken = DateHeureSys() +cJSON.expires_in
+      
+      	RENVOYER Vrai
+      
+      SINON
+      	//cJSON est un Variant = JSONVersVariant(sReponseAuthentification.Contenu)
+      	Erreur("Échec authentification")
+      	renvoyer FAUX
+      FIN
+      
+     type : 458752
+   -
+     name : ImporterCatalogueTI
+     procedure_id : 1721906509851687015
+     type_code : 15
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] ImporterCatalogueTI ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	booléen : <indiquez ici le rôle de la valeur de retour>
+      //
+      // Exemple :
+      // <Indiquez ici un exemple d'utilisation>
+      //
+      procédure ImporterCatalogueTI()
+      
+      // 🔹 Vérifier si le token est valide, sinon le renouveler
+      SI PAS TokenEstValide() ALORS
+      	SI PAS AutentificationAPITI() ALORS
+      		Erreur("Impossible de renouveler le token API.")
+      		RENVOYER Faux
+      	FIN
+      FIN
+      
+      // 🔹 Préparer la requête API pour récupérer tout le catalogue
+      reqCatalogue est un httpRequête
+      reqCatalogue.URL						= "https://transact.ti.com/v2/store/products/catalog?currency=EUR"
+      reqCatalogue.Méthode					= httpGet
+      reqCatalogue.Entête["Authorization"]	= "Bearer " + gAccessToken
+      
+      // 🔹 Envoyer la requête et stocker la réponse
+      repCatalogue est un httpRéponse = HTTPEnvoie(reqCatalogue)
+      
+      // 🔹 Vérifier la réponse API
+      SI repCatalogue.CodeEtat <> 200 ALORS
+      	Erreur("Erreur API TI (" + repCatalogue.CodeEtat + ") : " + repCatalogue.Contenu)
+      	RENVOYER Faux
+      FIN
+      
+      // 🔹 Convertir la réponse JSON en variant
+      cJSONCatalogue est un Variant = JSONVersVariant(repCatalogue.Contenu)
+      
+      // 🔹 Vérifier si la conversion a réussi
+      SI cJSONCatalogue = Null ALORS
+      	Erreur("Erreur de conversion JSON. Réponse brute : " + repCatalogue.Contenu)
+      	RENVOYER Faux
+      FIN
+      
+      
+      
+      // 🔹 Boucler sur chaque produit du catalogue et l'importer
+      cptProduitsImportes est un entier = 0
+      POUR CHAQUE produitLocal DE cJSONCatalogue.catalog
+      	sPartNumber est une chaîne = produitLocal.tiPartNumber
+      
+      	// Importer le produit
+      	SI TraiterProduit(produitLocal) ALORS
+      		cptProduitsImportes++
+      	SINON
+      		Erreur("Échec de l'importation pour : " + sPartNumber)
+      	FIN
+      FIN
+      
+      Info("Importation terminée : " + cptProduitsImportes + " produits importés avec succès.")
+      RENVOYER Vrai
+      
+      
+     type : 458752
+   -
+     name : TraiterProduit
+     procedure_id : 1721906509851752551
+     type_code : 15
+     code : |1-
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //[ <Résultat> = ] TraiterProduit (<cJSONProduit> est variant)
+      //
+      // Paramètres :
+      //	cJSONProduit (variant) : <indiquez ici le rôle de produitLocal>
+      // Valeur de retour :
+      // 	booléen : <indiquez ici le rôle de la valeur de retour>
+      //
+      // Exemple :
+      // <Indiquez ici un exemple d'utilisation>
+      procédure TraiterProduit(cJSONProduit est un Variant) : booléen
+      Produit est un Enregistrement de Product
+      idProduitLocal est un entier sur 8 octets
+      idPrixAjoute est un entier sur 8 octets
+      
+      
+      SI HLitRecherchePremier(Product, tiPartNumber, cJSONProduit.tiPartNumber) ALORS
+      	idProduitLocal = Product.idProduct
+      SINON
+      	idProduitLocal = 0
+      
+      FIN
+      Produit.tiPartNumber						= cJSONProduit.tiPartNumber.value
+      Produit.genericPartNumber					= cJSONProduit.genericPartNumber.value
+      Produit.description							= cJSONProduit.description.value
+      Produit.quantity							= cJSONProduit.quantity.value
+      Produit.limit								= cJSONProduit.limit.value
+      Produit.minimumOrderQuantity				= cJSONProduit.minimumOrderQuantity.value
+      Produit.standardPackQuantity				= cJSONProduit.standardPackQuantity.value
+      Produit.exportControlClassificationNumber	= cJSONProduit.exportControlClassificationNumber.value
+      Produit.htsCode								= cJSONProduit.htsCode.value
+      Produit.pinCount							= cJSONProduit.pinCount.value
+      Produit.packageType							= cJSONProduit.packageType.value
+      Produit.packageCarrier						= cJSONProduit.packageCarrier.value
+      Produit.customReel							= cJSONProduit.customReel.value
+      Produit.lifeCycle							= cJSONProduit.lifeCycle.value
+      Produit.buyNowURL							= cJSONProduit.buyNowURL.value
+      Produit.lastUpdateTime						= DateHeureSys()
+      
+      SI idProduitLocal = 0 ALORS
+      	Product				= Produit
+      	SI HAjoute(Product) ALORS
+      		// Si l'ajout réussit, récupérer l'ID du produit ajouté
+      		idProduitLocal = Product.idProduct
+      	SINON
+      		Erreur("L'ajout du produit a échoué.")
+      		RENVOYER Faux
+      	FIN
+      SINON
+      	Produit.idProduct	= idProduitLocal
+      	Product				= Produit
+      	HModifie(Product)
+      FIN
+      POUR CHAQUE pricingLocal DE cJSONProduit.pricing
+      	// Vérifier si le pricing existe déjà en base
+      	Prix est un Enregistrement de Pricing
+      	SI HLitRecherchePremier(Pricing, idProduct, idProduitLocal) ALORS
+      		// Mise à jour du pricing si nécessaire
+      		Prix.idProduct	= idProduitLocal
+      		Prix.currency	= pricingLocal.currency.value
+      		Pricing 		= Prix
+      		HModifie(Pricing)
+      		idPrixAjoute = Pricing.idPricing
+      	SINON
+      		// Ajouter un nouveau pricing
+      		Prix.idProduct	= idProduitLocal
+      		Prix.currency	= pricingLocal.currency.value
+      		SI HAjoute(Pricing,Prix) ALORS
+      			// Si l'ajout réussit, récupérer l'ID du produit ajouté
+      			idPrixAjoute = Pricing.idPricing
+      		SINON
+      			Erreur("L'ajout du produit a échoué.")
+      			RENVOYER Faux
+      		FIN
+      
+      	FIN
+      
+      	// 🔹 Traitement des nouveaux PriceBreaks associés
+      	POUR CHAQUE priceBreakLocal DE pricingLocal.priceBreaks
+      		// Vérifier si le PriceBreak existe déjà pour cet idPricing et cette quantité
+      		existeDeja est un booléen = Faux
+      		// Recherche des PriceBreak correspondant à l'idPricing
+      		SI HLitRecherchePremier(PriceBreak, idPricing, idPrixAjoute) ALORS
+      			TANTQUE HTrouve(PriceBreak)
+      				SI PriceBreak.priceBreakQuantity = priceBreakLocal.priceBreakQuantity.value ALORS
+      					// Mise à jour du prix existant
+      					PriceBreak.price = priceBreakLocal.price.value
+      					HModifie(PriceBreak)
+      					existeDeja = Vrai
+      					Sortir // Sortir de la boucle dès qu'on a trouvé
+      				FIN
+      				HLitSuivant(PriceBreak)
+      			FIN
+      		FIN
+      
+      		SI PAS existeDeja ALORS
+      			// Ajouter un nouveau PriceBreak
+      			pb est un Enregistrement de PriceBreak
+      			pb.idPricing			= idPrixAjoute
+      			pb.priceBreakQuantity	= priceBreakLocal.priceBreakQuantity.value
+      			pb.price				= priceBreakLocal.price.value
+      			HAjoute(PriceBreak, pb)
+      		FIN
+      	FIN
+      FIN
+      
+      // 🔹 Traitement des données d'inventaire futur
+      POUR CHAQUE invFuturLocal DE cJSONProduit.futureInventory
+      	SI invFuturLocal.forecastQuantity <> Null ALORS
+      		// Vérifier si l'entrée existe déjà pour cette date et ce produit
+      		existeDeja est un booléen = Faux
+      
+      		// Recherche via l'index "idProduct" dans FutureInventory
+      		SI HLitRecherchePremier(FutureInventory, idProduct, idProduitLocal) ALORS
+      			TANTQUE HTrouve(FutureInventory)
+      				// Comparer la date de forecast
+      				SI FutureInventory.forecastDate = Remplace( invFuturLocal.forecastDate.value,"-","") ALORS
+      					// Mise à jour de la quantité existante
+      					FutureInventory.forecastQuantity = invFuturLocal.forecastQuantity.value
+      					HModifie(FutureInventory)
+      					existeDeja = Vrai
+      					Sortir // Sortir de la boucle
+      				FIN
+      				HLitSuivant(FutureInventory)
+      			FIN
+      		FIN
+      
+      		SI PAS existeDeja ALORS
+      			// Ajouter une nouvelle entrée
+      			InventaireFutur est un Enregistrement de FutureInventory
+      			InventaireFutur.idProduct				= idProduitLocal
+      			InventaireFutur.forecastQuantity		= invFuturLocal.forecastQuantity.value
+      			InventaireFutur.forecastDate			= Remplace( invFuturLocal.forecastDate.value,"-","")
+      			HAjoute(FutureInventory, InventaireFutur)
+      		FIN
+      	FIN
+      FIN
+      
+      RENVOYER Vrai
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : HwAAAB4AAAB7MB8NZB5rGUbyk77+IjQnJ74vm430Ar3yq0zmP05sGBBw0ur17uG6ZWry
+  original_name : COL_SansNom1
+resources :
+ string_res :
+  identifier : 0x17d816450020111f
+  internal_properties : HwAAAB4AAAA809Qj/IAi+r8QXyrnW7sarQeYORCUjKBkmMeTFexSj5AuvTfTUpN0Eg==
+custom_note :
+ internal_properties : HwAAAB4AAADnl3uxgA6ylw4vtqUKEOJQD3VAAOKeNUmhPNojcRFoDpHEcUyYAw==

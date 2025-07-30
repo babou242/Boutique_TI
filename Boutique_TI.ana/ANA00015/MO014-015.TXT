@@ -1,0 +1,4 @@
+//MO014-015.TXT ANA00014 TO ANA00015
+Contrainte_Produit_Pricing		MCL	1,1->0,1	
+Contrainte_Pricing_PriceBreak		MCL	1,1->0,1	
+Contrainte_Produit_FutureInventory		MCL	1,1->0,1	

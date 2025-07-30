@@ -1,0 +1,18 @@
+//MO001-002.TXT ANA00001 TO ANA00002
+Produit		TAR	1308	nouvelle taille enregistrement : 1308
+Produit	idProduct	NNR	IDProduit	ATTENTION : la clé IDProduit a pour nouveau nom idProduct
+Produit	buyNowURL	NNR	Description	ATTENTION : la rubrique Description a pour nouveau nom buyNowURL
+Produit	buyNowURL	TAI-	200	la rubrique buyNowURL a comme nouvelle taille 301 au lieu de 501
+Produit	description	RUB+		description est une nouvelle rubrique
+Produit	quantity	RUB+		quantity est une nouvelle rubrique
+Produit	limit	RUB+		limit est une nouvelle rubrique
+Produit	minimumOrderQuantity	RUB+		minimumOrderQuantity est une nouvelle rubrique
+Produit	standardPackQuantity	RUB+		standardPackQuantity est une nouvelle rubrique
+Produit	exportControlClassificationNumber	RUB+		exportControlClassificationNumber est une nouvelle rubrique
+Produit	htsCode	RUB+		htsCode est une nouvelle rubrique
+Produit	pinCount	RUB+		pinCount est une nouvelle rubrique
+Produit	packageType	RUB+		packageType est une nouvelle rubrique
+Produit	packageCarrier	RUB+		packageCarrier est une nouvelle rubrique
+Produit	customReel	RUB+		customReel est une nouvelle rubrique
+Produit	lifeCycle	RUB+		lifeCycle est une nouvelle rubrique
+Produit	lastUpdateTime	RUB+		lastUpdateTime est une nouvelle rubrique

@@ -1,0 +1,6 @@
+//MO003-004.TXT ANA00003 TO ANA00004
+Product		FCNX+	MaConnexion1	
+Pricing		FCNX+	MaConnexion1	
+PriceBreak		FCNX+	MaConnexion1	
+FutureInventory		FCNX+	MaConnexion1	
+MaConnexion1		CNX+		

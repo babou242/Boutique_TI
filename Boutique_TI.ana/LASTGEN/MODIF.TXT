@@ -1,0 +1,6 @@
+//MO029-030.TXT ANA00029 TO ANA00030
+Quote		BASE		La base du fichier est passée de HFSQL Classic à HFSQL Client/Serveur
+Quote		FCNX+	MaConnexion1	
+LineItem		TAR	488	nouvelle taille enregistrement : 488
+LineItem	CustomerQuoteNumber	RUB+		CustomerQuoteNumber est une nouvelle clé
+Contrainte_Quote_LineItem		NWL	Quote (customerQuoteNumber) et LineItem (CustomerQuoteNumber)	Nouvelle liaison entre les fichiers de données Quote (customerQuoteNumber) et LineItem (CustomerQuoteNumber)
