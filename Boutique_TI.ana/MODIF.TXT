@@ -1,1 +1,3 @@
-//MO030-031.TXT ANA00030 TO ANA00031
+//MO033-034.TXT ANA00033 TO ANA00034
+OrderLineItemScheduleConfirmation		TAR	344	nouvelle taille enregistrement : 344
+OrderLineItemScheduleConfirmation	unshippedQuantity	RUB+		unshippedQuantity est une nouvelle rubrique
