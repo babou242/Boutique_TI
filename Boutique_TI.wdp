@@ -40,7 +40,7 @@ project :
    -
      name : FEN_Authentification
      identifier : 0x47d05ecb0055ccf9
-     internal_properties : HwAAAB4AAAD0sjc2i6KMCjvV98EDxSG18Zepn5aFUHrEe5Kvld118MyhAB9aG4GvRwLpoxOviMksKWn03jrwNecBLKc=
+     internal_properties : HwAAAB4AAABN3XwvuPNt69r0FuKipMLGoqa+YKu+WTuHuqthd8kMXKHiwd6ZJIi0WBP6UsIQKWhNyorT/dufYtA61f4=
      physical_name : .\FEN_Authentification.wdw
      type : 2
    -
@@ -58,7 +58,7 @@ project :
    -
      name : FEN_Fiche_Produit
      identifier : 0x47e5620000e97a16
-     internal_properties : HwAAAB4AAADpsQ0EfBHjtKCMmWtfxwn2b5cNoL4Yn8kCP0gwO5dklS0BgJmHC5DDp1wFXmhMrcAk8HoXPmSdj+zqZg==
+     internal_properties : HwAAAB4AAADfq/PGstfZavL6Z6GdhU+05YkzWlRGde+chRO3OGesUCuHHnuhMbrtnUJ7ICqK74ZqvkjZeCJf0SLQXA==
      physical_name : .\FEN_Fiche_Produit.wdw
      type : 2
    -
@@ -76,13 +76,13 @@ project :
    -
      name : FEN_Schedules
      identifier : 0x485139e301d4c5cc
-     internal_properties : HwAAAB4AAADdjSwfaAPdu6rExjJSdPIGVJVYW3t1nMGVJP0wHe1Ojz1iuTp59VSCF1II0tLg2ZgdGlqDTYtPkgDqBY4=
+     internal_properties : HwAAAB4AAAAAljv6bwYgvq/R+8UH2RXpZ45XRmb8C0gijba+Z0nf6Qz5QKMCbM19El0D3ye7hMUoLWWISpZUmRv1ELs=
      physical_name : .\FEN_Schedules.wdw
      type : 2
    -
      name : FEN_Paramètres
      identifier : 0x48752ce50465fc1a
-     internal_properties : HwAAAB4AAADbg0ZF2pFTOShGRLDQiniATc8SpL+yvU+bpk0gFdXKA6EmffLVMAx4jNcRSExmUxabmNgFzwnBBLZQ+5A=
+     internal_properties : HwAAAB4AAAC7Y+alOnHzWQimJJCwqthgbe9yxN9Sna87JqHH59mUJFnGHVJ1UCwYbPcxaKwGM3Z7+Lglr2kh5FawW3A=
      physical_name : .\FEN_Paramètres.wdw
      type : 2
    -
@@ -109,6 +109,12 @@ project :
      internal_properties : HwAAAB4AAACmRAUYgaSGHNXr6dMNVxveI9mp2ToWhFZo51i7sWUpvKrDAnlwyTpmND9owPnJ9rs+O3vi7DT2O/kTPlU=
      physical_name : .\CMdl.wdc
      type : 4
+   -
+     name : ProceduresOrderAPI
+     identifier : 0x4891b637027281c5
+     internal_properties : HwAAAB4AAAAe6DQHd2QesaWJnEyILuCw4F4v58RNYkDp+Mq20Wp927Ot2hGHtR286e5/B9HzBJkf630UM2+ikuMRHQ==
+     physical_name : .\ProceduresOrderAPI.wdg
+     type : 7
   other_elements : []
   array_of_analysis :
    -

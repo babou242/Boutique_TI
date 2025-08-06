@@ -1,3 +1,4 @@
-//MO033-034.TXT ANA00033 TO ANA00034
-OrderLineItemScheduleConfirmation		TAR	344	nouvelle taille enregistrement : 344
-OrderLineItemScheduleConfirmation	unshippedQuantity	RUB+		unshippedQuantity est une nouvelle rubrique
+//MO037-038.TXT ANA00037 TO ANA00038
+OrderLineItemSchedule	IDOrderLineItemSchedule	NNR	IDOrderSchedule	ATTENTION : la clé IDOrderSchedule a pour nouveau nom IDOrderLineItemSchedule
+OrderLineItemScheduleConfirmation	IDOrderLineItemScheduleConfirmation	NNR	IDconfirmation	ATTENTION : la clé IDconfirmation a pour nouveau nom IDOrderLineItemScheduleConfirmation
+OrderLineItemScheduleConfirmation	IDOrderLineItemSchedule	NNR	IDOrderSchedule	ATTENTION : la clé IDOrderSchedule a pour nouveau nom IDOrderLineItemSchedule

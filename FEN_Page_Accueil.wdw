@@ -1329,7 +1329,7 @@ window :
         -
           name : TABLE_DevisAccepte
           identifier : 0x2887302029154f0c
-          internal_properties : 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
+          internal_properties : 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
           properties :
            x : 8
            y : 64
@@ -1692,6 +1692,7 @@ window :
                FIN
                HExporteCSV(REQ_LineItem,SAI_Répertoire+"\export.csv",",",hExpCréation)
                Info("Export effectué")
+               Renvoyer Vrai
               type : 18
             -
               type : 161
@@ -1823,7 +1824,7 @@ window :
         -
           name : SAI_JSON
           identifier : 0x288c9e7394f26996
-          internal_properties : HwAAAB4AAADYM8jnQRJbh8cP1nL2IZQuF4nGg0xt7i1rFTlYe2kBOG0id69JgaX8iglv7BJ5vqx4mvhwsRlApvzScM/8RnxATVimxxxT5ED16coI8bgzwrBKRNmFuQ2pIsEMaYIPcleuYZQAgr+l3UCUYT+5KkxGPf+Cb215XWB+GuTJD62Ov8za2PQX0xgcIGroIBysjCHl2abjEQ1sXZW1mAb5Blg4r97ECF30plmqR9NjAWadfvW1f2kBifQVa9NvbmykndyxYEzBDAc1sSnnwdWIFvu2NVQPeivj0caiZq9dsxvRnDh610eQ3TiJu2E0ivaLnFZC03lfAcpVtbBZ6c6jltCMzELib4EL3bVSEErTM8GUp9qk88bNZowsmSB5TRVltdopl0+Vaq7kljXLja9mOChpMGKwM17jXd6atCCqwascBN3evOAUdMBP/B7wnXYcRncYyvg+MsbAtt3wkLFnxYw8gWabzGnJnk6Q4hMfQdsWR/payc52szcTr4FHgcAcQef5EyVi2vkBCGRtsXa1WgO0KclNrRUynMryiADNC7p8CJ3mEI2fVi7nRbIhSAS5mlFzHIf3J1QTrMc/XweoSrp4GW94MDdLEsmr+s84/jHlQEYTZZ1VR/ks/6+VA0gPM2OweiGxSmw4sPLLk4qrx0u0IGMGiqzDtWkwVm0kYtveTQOwIFEdp7+cFgKKAwQ/ura1oXH0EdcWMsmoPj0Xf+1kHlDXkGcM2Xk4Mm5SMA/c1qCsL64Fzc2XEGQM8d0z23oA/NB9EZIHnh1OCJA9ZersmGZ5vf4DdkTLT2XpyzWeDZNfwdufGcqjacqTNL36DJHns3DTCdcv/GKvunhEPqssvzC8xcBGeptWbZ55fK8Sm38N6hm8ULwYkuQwrS8fSretOKCocZCBbqWLBZQPCcNNpMQO+8ivgmF2okmRnLgHZs/LU9A8FfepmHZ/bviCPoR5hT9+/RPria3IqFIJJp1E6NPZMoZkPzjiPni87j3hIjtXezWvUwRp6EMEB9NmAxVck0Oo37NiESd8lIPZ96tGF5j7moGrtakIPM52fY3DIM/hm29TxhCuZbTaF36A/np+JHEtf06JKJVew9vM9dHSWKQuEXoiT2jVDTa4L5mTqBS7im2r9VOXP2VwNm61yCkgBNshAFfgm/Da0UZnvNyDKgMq7Jr+8/AoOuhct+4NqL38olgxgmDpe0AkXcYTvWiUgGxIIsJTTXGliEbCFz2n0YrpNqvvXA6ofsWb/y9hsKppmAK0AlWiMjSFNRhnQTzLRrpFe1x/NQdXvTaQYrgL03bi9YBD/uj8YnWiP/KhaGFZv2M8yfMkbPjHSlZA3myikOo5ftaL6+3EbWagsFhSp8PXPbxKhKWmzBnmvpMLh8m/PxcVM6+adSU/8LtMtsR74bUCIJyc+y4osIGkVWlKiPRV0tRtgTiiUQz0/hmGqU1ZfEmeKqirv8ZWOGGClIRPmJ0cI9xMWyGArlU/HXF17LPCjd0vaK5f4cHWnevwnH4C/L1tQCxpi2vnJuuRmsGby3KxpNwslVz5/byRhm+DhkafvyAOGOb93EeDCDeL0/UIp6eBA/uoUOM9RMzR1hJwWQt+7FMR6lZOd3l0NaAnA4WOwjlxqdO4aB8Y2iujttpQnFkceZ8bf/j86p1ws3X48aJL+B2pfepQVSPg37B6oGvWoHRdkBtDubWZU3SXbgMAUcRn7HbeJ0f+Za07g9tN4UM58mYONM5PdoztuDAXAeEZu23DqgKXPVPBo0cROY2SIz6h454JV8CA9c9Ef/pQrWJLwjJJMspGzqvkm/HZUJa5sb9fBTg9lHCLOvgjV5Lh0mWY/2RQ21ao/+45sqdAnnEHbetUiy+VJ3sJ4znNXA==
+          internal_properties : HwAAAB4AAAAQ/BCIG3tvXx238xEeJVNykRVQvW8uXyLW1ss0TtBrYICpbzHxPS6L+sWZKjyxs/RGITJhSedNfGHT5L5lA3bQzLyI/n9ns8Zn2JSvZ3blgaif+Na7lUsm4R0J20LH6y19o9fqCLT+vW1MBvnjD4AVCk4zn7tCw6qSsFY5ID1E5wecqzvf/4c0/kQ8E2sDHlZ4BmoS8diT6q+9jDTDA5Az9GeraSSmI1SmWFrZXHqqA32yBevbarhpkeeKLjtQMFgR9ROcnqGx8O8xzeJipdmsqq94V+0gvYYGdN1hwfywS2idmZOhMWkavpSj7o8usoqkbi4LOKWGbvOtrZDj6jpQpt7Usd+FLJPycdlQazTJDMVouB16YYG77wk+ZXZYaGxymcFaSF0RwyKzsHmkjiIrxUFsYB4zUAHXPGh2iSsZhv1Ea7LiH4ozEVMZWPmlI5s8u54PQftFBKKGMfFbu2g7+jbzmd3Pcb1sxe+nvDwqwKwU8wmMGAEbN89bQZaSVV5CcAs5haOtEt3iekB4gB86+T7ODTjUQvJTK7oIOkJLu2LC3lOavwJCQx7suLbl61Eq7h0FStKzQEEDzNOmXqxNwjXpPBgA00603AZMp+r2K04qZgCfDQI8K9LumvVhIN38+/vmg2euQZ5uE/uQuEIajNXZCc2/80QL0oYwI7g9gW8gW8JnWMyIRmXeBbqtma45AkpGHcfEE7yrPdhhXdNHv4xUmlgElk0JP+6aHABo69qcXVX63G7Qf9Y+2FzubtxJEuuEZaIMJz3fsvCWLDy2eu8+iLIj/DXkTsr5nrvx2WhpMUKk+ovtZQ54DF+Lf+W/ZIpjzQ/6zKyycQALsXAN5VZc40KjobqXOEh2lqhousu2AQPYJxGaIrv26h2//Ma/TjY+ay4x1BjI96wszvc47aSKTNxC0K53HPi2ZnAzZUEp0HHyvQALqINGYfoSjc8hW3WsW52OPkmTYaJUm9p/rT+3C7Jz4biInR7VP69yn+Mf+aZOzEkMfpRsgfDKeIAAwLbGS5XEXMtWzGxE5vd1w6PJiT9YsO6togHtIZrDdiLgOr67PgOiWcQUrR3951Ebo+4Hxn57kY/PTpe0YGKps6eNeNGyl/4X90KRp6BmJNioSYfnOPSJrp2UMiDkgOFqNQ2OfEkCZBp6JbOuQUU6uJ2mePMWWpA2zOPgVg13IzueJKeqVtLM3h95+6lypAQK3PPXfjVqNl5LGs+4o3Bcw8Q/s8JnK2MMcUVQ9HxDGswkfoXlMVsuj9v9vhv5AwGsKS5giW7KgFuQUVDzeNUCer5RTwi/FeK3f2BI3Od+X5510ooX6I70+GcmbtWp+lQrmao6Pu5wZ1lr3lZYzUvkKbeZC5eLu8zv86xbH95PtwuzSihkfKCypxndGa/2QCPcrPlFNSclXnWCTQCw/XKGWxgPsS5TavUQzlg0pN1G36IrNPFXsi8Jz3k=
           properties :
            x : 123
            y : 73
@@ -1875,7 +1876,8 @@ window :
            p_codes :
             -
               code : |1+
-               DeserialiseOrder(SAI_JSON)
+               vOrders est un Variant = JSONVersVariant(SAI_JSON)
+               TraiterOrder(vOrders)
               type : 18
             -
               type : 161
@@ -2599,31 +2601,33 @@ window :
       	m_IDOrder						est un entier sur 8 octets	<mapping=IDOrder>
       FIN
       
-      // OrderSchedule
+      // OrderLineItemSchedule
       STOrderLineItemSchedule est une structure
-      	m_IDOrderSchedule		est un entier sur 8 octets	<mapping=IDOrderSchedule, clé unique>
-      	m_requestedQuantity		est une chaîne				<mapping=requestedQuantity>
-      	m_requestedDeliveryDate	est une chaîne				<mapping=requestedDeliveryDate>
-      	m_IDOrderLineItem		est un entier sur 8 octets	<mapping=IDOrderLineItem>
+      	m_IDOrderLineItemSchedule	est un entier sur 8 octets	<mapping=IDOrderLineItemSchedule, clé unique>
+      	m_requestedQuantity			est une chaîne				<mapping=requestedQuantity>
+      	m_requestedDeliveryDate		est une chaîne				<mapping=requestedDeliveryDate>
+      	m_IDOrderLineItem			est un entier sur 8 octets	<mapping=IDOrderLineItem>
       FIN
+      
       
       // OrderLineItemScheduleConfirmation
+      // OrderLineItemScheduleConfirmation
       STOrderLineItemScheduleConfirmation est une structure
-      	m_IDconfirmation				est un entier sur 8 octets	<mapping=IDconfirmation, clé unique>
-      	m_tiScheduleLineNumber			est une chaîne				<mapping=tiScheduleLineNumber>
-      	m_scheduledQuantity				est un entier				<mapping=scheduledQuantity>
-      	m_customerRequestedShipDate		est une chaîne				<mapping=customerRequestedShipDate>
-      	m_estimatedShipDate				est une chaîne				<mapping=estimatedShipDate>
-      	m_estimatedDeliveryDate			est une chaîne				<mapping=estimatedDeliveryDate>
-      	m_estimatedDeliveryDateStatus	est une chaîne				<mapping=estimatedDeliveryDateStatus>
-      	m_shippedQuantity				est un entier				<mapping=shippedQuantity>
-      	m_rescheduledShipDate			est une chaîne				<mapping=rescheduledShipDate>
-      	m_IDOrderSchedule				est un entier sur 8 octets	<mapping=IDOrderSchedule>
-      	m_unshippedQuantity				est un entier				<mapping=unshippedQuantity>
+      	m_IDOrderLineItemScheduleConfirmation	est un entier sur 8 octets	<mapping=IDOrderLineItemScheduleConfirmation, clé unique>
+      	m_tiScheduleLineNumber					est une chaîne				<mapping=tiScheduleLineNumber>
+      	m_scheduledQuantity						est un entier				<mapping=scheduledQuantity>
+      	m_customerRequestedShipDate				est une chaîne				<mapping=customerRequestedShipDate>
+      	m_estimatedShipDate						est une chaîne				<mapping=estimatedShipDate>
+      	m_estimatedDeliveryDate					est une chaîne				<mapping=estimatedDeliveryDate>
+      	m_estimatedDeliveryDateStatus			est une chaîne				<mapping=estimatedDeliveryDateStatus>
+      	m_shippedQuantity						est un entier				<mapping=shippedQuantity>
+      	m_rescheduledShipDate					est une chaîne				<mapping=rescheduledShipDate>
+      	m_IDOrderLineItemSchedule				est un entier sur 8 octets	<mapping=IDOrderLineItemSchedule>
+      	m_unshippedQuantity						est un entier				<mapping=unshippedQuantity>
       FIN
       
       
-      // OrderLineItemMessage
+      		// OrderLineItemMessage
       STOrderLineItemMessage est une structure
       	m_IDOrderLineItemMessage	est un entier sur 8 octets	<mapping=IDOrderLineItemMessage, clé unique>
       	m_code						est une chaîne				<mapping=code>
@@ -2649,9 +2653,25 @@ window :
       	stOrder.m_purchaseOrderDate = vOrder.purchaseOrderDate
       	stOrder.m_orderStatus = vOrder.orderStatus
       	stOrder.m_endCustomerCompanyName = vOrder.endCustomerCompanyName
-      	enregistrement_order est un Enregistrement de Order = stOrder
-      	HAjoute(Order,enregistrement_order)
+      	si HLitRecherche(Order,orderNumber,stOrder.m_orderNumber) ALORS
+      		Order.orderDate = stOrder.m_orderDate
+      		Order.customerPurchaseOrderNumber = stOrder.m_customerPurchaseOrderNumber
+      		Order.purchaseOrderDate = stOrder.m_purchaseOrderDate
+      		Order.orderStatus = stOrder.m_orderStatus
+      		Order.endCustomerCompanyName = stOrder.m_endCustomerCompanyName
+      		HModifie(Order)
+      	SINON
       
+      		enregistrement_order est un Enregistrement de Order = stOrder
+      		HAjoute(Order,enregistrement_order)
+      	fin
+      	// Purge des messages présents en base
+      	HLitRecherche(OrderMessage,IDOrder,Order.IDOrder)
+      	TANTQUE HTrouve()
+      		HSupprime(OrderMessage)
+      		HLitSuivant(OrderMessage,IDOrder)
+      	FIn
+      	//Ajout des messages présent dans le JSON
       	Pour tout vOrderMessage de vOrder.messages
       		stOrderMessage est un STOrderMessage
       		stOrderMessage.m_code		= vOrderMessage.code
@@ -2662,26 +2682,62 @@ window :
       		enregistrement_ordermessage est un Enregistrement de OrderMessage = stOrderMessage
       		HAjoute(OrderMessage,enregistrement_ordermessage)
       	FIN
+      	tabTiPartNumber est un tableau de chaînes
+      	HLitRecherche(OrderLineItem,IDOrder,Order.IDOrder)
+      	TANTQUE HTrouve()
+      		TableauAjoute(tabTiPartNumber,OrderLineItem.tiPartNumber)
+      		HLitSuivant(OrderLineItem,IDOrder)
+      	FIN
+      	Trace(TableauVersChaîne(tabTiPartNumber))
       	Pour tout vOrderLineItem de vOrder.lineItems
-      		stOrderLineItem est un STOrderLineItem
-      		stOrderLineItem.m_tiLineItemNumber			= vOrderLineItem.tiLineItemNumber
-      		stOrderLineItem.m_itemCheckoutProfileId		= vOrderLineItem.itemCheckoutProfileId
-      		stOrderLineItem.m_customerLineItemNumber	= vOrderLineItem.customerLineItemNumber
-      		stOrderLineItem.m_status					= vOrderLineItem.status
-      		stOrderLineItem.m_cancellationWindowWeeks	= vOrderLineItem.cancellationWindowWeeks
-      		stOrderLineItem.m_rescheduleWindowWeeks			= vOrderLineItem.rescheduleWindowWeeks
-      		stOrderLineItem.m_nonCancellableNonReturnable	= vOrderLineItem.nonCancellableNonReturnable
-      		stOrderLineItem.m_tiPartNumber					= vOrderLineItem.tiPartNumber
-      		stOrderLineItem.m_customerPartNumber			= vOrderLineItem.customerPartNumber
-      		stOrderLineItem.m_tiTotalOrderItemQuantity		= vOrderLineItem.tiTotalOrderItemQuantity
-      		stOrderLineItem.m_customerAnticipatedUnitPrice	= vOrderLineItem.customerAnticipatedUnitPrice
-      		stOrderLineItem.m_quoteNumber					= vOrderLineItem.quoteNumber
-      		stOrderLineItem.m_customerCurrencyCode			= vOrderLineItem.customerCurrencyCode
-      		stOrderLineItem.m_tiUnitPrice					= vOrderLineItem.tiUnitPrice
-      		stOrderLineItem.m_tiCurrencyCode				= vOrderLineItem.tiCurrencyCode
-      		stOrderLineItem.m_IDOrder						= Order.IDOrder
-      		enregistrement_orderlineitem est un Enregistrement de OrderLineItem = stOrderLineItem
-      		HAjoute(OrderLineItem,enregistrement_orderlineitem)
+      		cTiPartNumber est une chaîne = vOrderLineItem.tiPartNumber
+      		SI TableauCherche(tabTiPartNumber,tcLinéaire,vOrderLineItem.tiPartNumber)> 0 alors
+      			HLitRecherche(OrderLineItem,IDOrdertiPartNumber,[Order.IDOrder, cTiPartNumber])
+      			SI HTrouve() alors
+      				OrderLineItem.tiLineItemNumber				= vOrderLineItem.tiLineItemNumber
+      				OrderLineItem.itemCheckoutProfileId			= vOrderLineItem.itemCheckoutProfileId
+      				OrderLineItem.customerLineItemNumber		= vOrderLineItem.customerLineItemNumber
+      				OrderLineItem.status						= vOrderLineItem.status
+      				OrderLineItem.cancellationWindowWeeks		= vOrderLineItem.cancellationWindowWeeks
+      				OrderLineItem.rescheduleWindowWeeks			= vOrderLineItem.rescheduleWindowWeeks
+      				OrderLineItem.nonCancellableNonReturnable	= vOrderLineItem.nonCancellableNonReturnable
+      				OrderLineItem.customerPartNumber			= vOrderLineItem.customerPartNumber
+      				OrderLineItem.tiTotalOrderItemQuantity		= vOrderLineItem.tiTotalOrderItemQuantity
+      				OrderLineItem.customerAnticipatedUnitPrice	= vOrderLineItem.customerAnticipatedUnitPrice
+      				OrderLineItem.quoteNumber					= vOrderLineItem.quoteNumber
+      				OrderLineItem.customerCurrencyCode			= vOrderLineItem.customerCurrencyCode
+      				OrderLineItem.tiUnitPrice					= vOrderLineItem.tiUnitPrice
+      				OrderLineItem.tiCurrencyCode				= vOrderLineItem.tiCurrencyCode
+      				HModifie(OrderLineItem)
+      				TableauSupprime(tabTiPartNumber,TableauCherche(tabTiPartNumber,tcLinéaire,vOrderLineItem.tiPartNumber))
+      				Trace(TableauVersChaîne(tabTiPartNumber)+"Item modifié")
+      
+      			FIN
+      		SINON
+      			stOrderLineItem est un STOrderLineItem
+      			stOrderLineItem.m_tiLineItemNumber				= vOrderLineItem.tiLineItemNumber
+      			stOrderLineItem.m_itemCheckoutProfileId			= vOrderLineItem.itemCheckoutProfileId
+      			stOrderLineItem.m_customerLineItemNumber		= vOrderLineItem.customerLineItemNumber
+      			stOrderLineItem.m_status						= vOrderLineItem.status
+      			stOrderLineItem.m_cancellationWindowWeeks		= vOrderLineItem.cancellationWindowWeeks
+      			stOrderLineItem.m_rescheduleWindowWeeks			= vOrderLineItem.rescheduleWindowWeeks
+      			stOrderLineItem.m_nonCancellableNonReturnable	= vOrderLineItem.nonCancellableNonReturnable
+      			stOrderLineItem.m_tiPartNumber					= vOrderLineItem.tiPartNumber
+      			stOrderLineItem.m_customerPartNumber			= vOrderLineItem.customerPartNumber
+      			stOrderLineItem.m_tiTotalOrderItemQuantity		= vOrderLineItem.tiTotalOrderItemQuantity
+      			stOrderLineItem.m_customerAnticipatedUnitPrice	= vOrderLineItem.customerAnticipatedUnitPrice
+      			stOrderLineItem.m_quoteNumber					= vOrderLineItem.quoteNumber
+      			stOrderLineItem.m_customerCurrencyCode			= vOrderLineItem.customerCurrencyCode
+      			stOrderLineItem.m_tiUnitPrice					= vOrderLineItem.tiUnitPrice
+      			stOrderLineItem.m_tiCurrencyCode				= vOrderLineItem.tiCurrencyCode
+      			stOrderLineItem.m_IDOrder						= Order.IDOrder
+      			enregistrement_orderlineitem est un Enregistrement de OrderLineItem = stOrderLineItem
+      			HAjoute(OrderLineItem,enregistrement_orderlineitem)
+      		FIN
+      
+      
+      
+      
       
       		Pour tout vOrderLineItemMessage de vOrderLineItem.messages
       			stOrderLineItemMessage est un STOrderLineItemMessage
@@ -2740,4 +2796,4 @@ embedded_elements :
  elements :
   -
     name : FEN_Page_Accueil_1$Requête
-    internal_properties : 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
+    internal_properties : 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
