@@ -115,6 +115,12 @@ project :
      internal_properties : HwAAAB4AAAAe6DQHd2QesaWJnEyILuCw4F4v58RNYkDp+Mq20Wp927Ot2hGHtR286e5/B9HzBJkf630UM2+ikuMRHQ==
      physical_name : .\ProceduresOrderAPI.wdg
      type : 7
+   -
+     name : ProcéduresASNAPI
+     identifier : 0x4895afff00c2330d
+     internal_properties : HwAAAB4AAABd1WEIQBXnqKwgrV/jS72dvqMVyll4wZkCESppPAgBxPZQDRaE/NjZ5TrU6vzYGawwhIYbOmCRg5BO2g==
+     physical_name : .\ProcéduresASNAPI.wdg
+     type : 7
   other_elements : []
   array_of_analysis :
    -

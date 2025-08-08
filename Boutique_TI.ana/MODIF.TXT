@@ -1,23 +1,14 @@
-//MO038-039.TXT ANA00038 TO ANA00039
-ASN		NFI		nouveau fichier de données
-ASNShipmentInternalTransaction		NFI		nouveau fichier de données
-ASNForwardingAgent		NFI		nouveau fichier de données
-ASNWayBill		NFI		nouveau fichier de données
-ASNCommercialInvoice		NFI		nouveau fichier de données
-ASNAddressDetails		NFI		nouveau fichier de données
-bookingOrderDetails		NFI		nouveau fichier de données
-passThrus		NFI		nouveau fichier de données
-packageDetails		NFI		nouveau fichier de données
-itemDetails		NFI		nouveau fichier de données
-shipTrackCode		NFI		nouveau fichier de données
-Contrainte_Order_ASN		NWL	Order (orderNumber) et ASN (OrderNumber)	Nouvelle liaison entre les fichiers de données Order (orderNumber) et ASN (OrderNumber)
-Contrainte_ASN_ASNShipmentInternalTransaction		NWL	ASN (IDASN) et ASNShipmentInternalTransaction (IDASN)	Nouvelle liaison entre les fichiers de données ASN (IDASN) et ASNShipmentInternalTransaction (IDASN)
-Contrainte_ASN_ASNForwardingAgent		NWL	ASN (IDASN) et ASNForwardingAgent (IDASN)	Nouvelle liaison entre les fichiers de données ASN (IDASN) et ASNForwardingAgent (IDASN)
-Contrainte_ASN_ASNWayBill		NWL	ASN (IDASN) et ASNWayBill (IDASN)	Nouvelle liaison entre les fichiers de données ASN (IDASN) et ASNWayBill (IDASN)
-Contrainte_ASN_ASNCommercialInvoice		NWL	ASN (IDASN) et ASNCommercialInvoice (IDASN)	Nouvelle liaison entre les fichiers de données ASN (IDASN) et ASNCommercialInvoice (IDASN)
-Contrainte_ASN_ASNAddressDetails		NWL	ASN (IDASN) et ASNAddressDetails (IDASN)	Nouvelle liaison entre les fichiers de données ASN (IDASN) et ASNAddressDetails (IDASN)
-Contrainte_ASN_bookingOrderDetails		NWL	ASN (IDASN) et bookingOrderDetails (IDASN)	Nouvelle liaison entre les fichiers de données ASN (IDASN) et bookingOrderDetails (IDASN)
-Contrainte_bookingOrderDetails_passThrus		NWL	bookingOrderDetails (IDbookingOrderDetails) et passThrus (IDbookingOrderDetails)	Nouvelle liaison entre les fichiers de données bookingOrderDetails (IDbookingOrderDetails) et passThrus (IDbookingOrderDetails)
-Contrainte_bookingOrderDetails_packageDetails		NWL	bookingOrderDetails (IDbookingOrderDetails) et packageDetails (IDbookingOrderDetails)	Nouvelle liaison entre les fichiers de données bookingOrderDetails (IDbookingOrderDetails) et packageDetails (IDbookingOrderDetails)
-Contrainte_packageDetails_itemDetails		NWL	packageDetails (IDpackageDetails) et itemDetails (IDpackageDetails)	Nouvelle liaison entre les fichiers de données packageDetails (IDpackageDetails) et itemDetails (IDpackageDetails)
-Contrainte_itemDetails_shipTrackCode		NWL	itemDetails (IDitemDetails) et shipTrackCode (IDitemDetails)	Nouvelle liaison entre les fichiers de données itemDetails (IDitemDetails) et shipTrackCode (IDitemDetails)
+//MO039-040.TXT ANA00039 TO ANA00040
+ASNBookingOrderDetails		NNF*	bookingOrderDetails	nouveau nom ASNBookingOrderDetails
+ASNBookingOrderDetails	IDASNBookingOrderDetails	NNR	IDbookingOrderDetails	ATTENTION : la clé IDbookingOrderDetails a pour nouveau nom IDASNBookingOrderDetails
+ASNPassThrus		NNF*	passThrus	nouveau nom ASNPassThrus
+ASNPassThrus	IDASNpassThrus	NNR	IDpassThrus	ATTENTION : la clé IDpassThrus a pour nouveau nom IDASNpassThrus
+ASNPassThrus	IDASNBookingOrderDetails	NNR	IDbookingOrderDetails	ATTENTION : la clé IDbookingOrderDetails a pour nouveau nom IDASNBookingOrderDetails
+ASNPackageDetails		NNF*	packageDetails	nouveau nom ASNPackageDetails
+ASNPackageDetails	IDASNpackageDetails	NNR	IDpackageDetails	ATTENTION : la clé IDpackageDetails a pour nouveau nom IDASNpackageDetails
+ASNPackageDetails	IDASNBookingOrderDetails	NNR	IDbookingOrderDetails	ATTENTION : la clé IDbookingOrderDetails a pour nouveau nom IDASNBookingOrderDetails
+ASNItemDetails		NNF*	itemDetails	nouveau nom ASNItemDetails
+ASNItemDetails	IDASNitemDetails	NNR	IDitemDetails	ATTENTION : la clé IDitemDetails a pour nouveau nom IDASNitemDetails
+ASNItemDetails	IDASNpackageDetails	NNR	IDpackageDetails	ATTENTION : la clé IDpackageDetails a pour nouveau nom IDASNpackageDetails
+ASNShipTrackCode		NNF*	shipTrackCode	nouveau nom ASNShipTrackCode
+ASNShipTrackCode	IDASNitemDetails	NNR	IDitemDetails	ATTENTION : la clé IDitemDetails a pour nouveau nom IDASNitemDetails
