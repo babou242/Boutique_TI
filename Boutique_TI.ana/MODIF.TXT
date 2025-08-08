@@ -1,4 +1,23 @@
-//MO037-038.TXT ANA00037 TO ANA00038
-OrderLineItemSchedule	IDOrderLineItemSchedule	NNR	IDOrderSchedule	ATTENTION : la clé IDOrderSchedule a pour nouveau nom IDOrderLineItemSchedule
-OrderLineItemScheduleConfirmation	IDOrderLineItemScheduleConfirmation	NNR	IDconfirmation	ATTENTION : la clé IDconfirmation a pour nouveau nom IDOrderLineItemScheduleConfirmation
-OrderLineItemScheduleConfirmation	IDOrderLineItemSchedule	NNR	IDOrderSchedule	ATTENTION : la clé IDOrderSchedule a pour nouveau nom IDOrderLineItemSchedule
+//MO038-039.TXT ANA00038 TO ANA00039
+ASN		NFI		nouveau fichier de données
+ASNShipmentInternalTransaction		NFI		nouveau fichier de données
+ASNForwardingAgent		NFI		nouveau fichier de données
+ASNWayBill		NFI		nouveau fichier de données
+ASNCommercialInvoice		NFI		nouveau fichier de données
+ASNAddressDetails		NFI		nouveau fichier de données
+bookingOrderDetails		NFI		nouveau fichier de données
+passThrus		NFI		nouveau fichier de données
+packageDetails		NFI		nouveau fichier de données
+itemDetails		NFI		nouveau fichier de données
+shipTrackCode		NFI		nouveau fichier de données
+Contrainte_Order_ASN		NWL	Order (orderNumber) et ASN (OrderNumber)	Nouvelle liaison entre les fichiers de données Order (orderNumber) et ASN (OrderNumber)
+Contrainte_ASN_ASNShipmentInternalTransaction		NWL	ASN (IDASN) et ASNShipmentInternalTransaction (IDASN)	Nouvelle liaison entre les fichiers de données ASN (IDASN) et ASNShipmentInternalTransaction (IDASN)
+Contrainte_ASN_ASNForwardingAgent		NWL	ASN (IDASN) et ASNForwardingAgent (IDASN)	Nouvelle liaison entre les fichiers de données ASN (IDASN) et ASNForwardingAgent (IDASN)
+Contrainte_ASN_ASNWayBill		NWL	ASN (IDASN) et ASNWayBill (IDASN)	Nouvelle liaison entre les fichiers de données ASN (IDASN) et ASNWayBill (IDASN)
+Contrainte_ASN_ASNCommercialInvoice		NWL	ASN (IDASN) et ASNCommercialInvoice (IDASN)	Nouvelle liaison entre les fichiers de données ASN (IDASN) et ASNCommercialInvoice (IDASN)
+Contrainte_ASN_ASNAddressDetails		NWL	ASN (IDASN) et ASNAddressDetails (IDASN)	Nouvelle liaison entre les fichiers de données ASN (IDASN) et ASNAddressDetails (IDASN)
+Contrainte_ASN_bookingOrderDetails		NWL	ASN (IDASN) et bookingOrderDetails (IDASN)	Nouvelle liaison entre les fichiers de données ASN (IDASN) et bookingOrderDetails (IDASN)
+Contrainte_bookingOrderDetails_passThrus		NWL	bookingOrderDetails (IDbookingOrderDetails) et passThrus (IDbookingOrderDetails)	Nouvelle liaison entre les fichiers de données bookingOrderDetails (IDbookingOrderDetails) et passThrus (IDbookingOrderDetails)
+Contrainte_bookingOrderDetails_packageDetails		NWL	bookingOrderDetails (IDbookingOrderDetails) et packageDetails (IDbookingOrderDetails)	Nouvelle liaison entre les fichiers de données bookingOrderDetails (IDbookingOrderDetails) et packageDetails (IDbookingOrderDetails)
+Contrainte_packageDetails_itemDetails		NWL	packageDetails (IDpackageDetails) et itemDetails (IDpackageDetails)	Nouvelle liaison entre les fichiers de données packageDetails (IDpackageDetails) et itemDetails (IDpackageDetails)
+Contrainte_itemDetails_shipTrackCode		NWL	itemDetails (IDitemDetails) et shipTrackCode (IDitemDetails)	Nouvelle liaison entre les fichiers de données itemDetails (IDitemDetails) et shipTrackCode (IDitemDetails)
