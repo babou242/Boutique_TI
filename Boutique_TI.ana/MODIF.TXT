@@ -1,14 +1,2 @@
-//MO039-040.TXT ANA00039 TO ANA00040
-ASNBookingOrderDetails		NNF*	bookingOrderDetails	nouveau nom ASNBookingOrderDetails
-ASNBookingOrderDetails	IDASNBookingOrderDetails	NNR	IDbookingOrderDetails	ATTENTION : la clé IDbookingOrderDetails a pour nouveau nom IDASNBookingOrderDetails
-ASNPassThrus		NNF*	passThrus	nouveau nom ASNPassThrus
-ASNPassThrus	IDASNpassThrus	NNR	IDpassThrus	ATTENTION : la clé IDpassThrus a pour nouveau nom IDASNpassThrus
-ASNPassThrus	IDASNBookingOrderDetails	NNR	IDbookingOrderDetails	ATTENTION : la clé IDbookingOrderDetails a pour nouveau nom IDASNBookingOrderDetails
-ASNPackageDetails		NNF*	packageDetails	nouveau nom ASNPackageDetails
-ASNPackageDetails	IDASNpackageDetails	NNR	IDpackageDetails	ATTENTION : la clé IDpackageDetails a pour nouveau nom IDASNpackageDetails
-ASNPackageDetails	IDASNBookingOrderDetails	NNR	IDbookingOrderDetails	ATTENTION : la clé IDbookingOrderDetails a pour nouveau nom IDASNBookingOrderDetails
-ASNItemDetails		NNF*	itemDetails	nouveau nom ASNItemDetails
-ASNItemDetails	IDASNitemDetails	NNR	IDitemDetails	ATTENTION : la clé IDitemDetails a pour nouveau nom IDASNitemDetails
-ASNItemDetails	IDASNpackageDetails	NNR	IDpackageDetails	ATTENTION : la clé IDpackageDetails a pour nouveau nom IDASNpackageDetails
-ASNShipTrackCode		NNF*	shipTrackCode	nouveau nom ASNShipTrackCode
-ASNShipTrackCode	IDASNitemDetails	NNR	IDitemDetails	ATTENTION : la clé IDitemDetails a pour nouveau nom IDASNitemDetails
+//MO042-043.TXT ANA00042 TO ANA00043
+Contrainte_Order_ASN		MCL	1,1->0,1	
