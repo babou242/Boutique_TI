@@ -121,6 +121,12 @@ project :
      internal_properties : HwAAAB4AAABd1WEIQBXnqKwgrV/jS72dvqMVyll4wZkCESppPAgBxPZQDRaE/NjZ5TrU6vzYGawwhIYbOmCRg5BO2g==
      physical_name : .\ProcéduresASNAPI.wdg
      type : 7
+   -
+     name : REQ_TiPartNumberCommande
+     identifier : 0x48b7f5f903a53091
+     internal_properties : HwAAAB4AAAAdeZ2Nb2nK0v75roTV7pwBpkeISX/BuzRZ1h7rfunOcSgg+YvZcw8zdld5B4s41V/0HH7WaWti2tx2
+     physical_name : .\REQ_TiPartNumberCommande.WDR
+     type : 5
   other_elements : []
   array_of_analysis :
    -
